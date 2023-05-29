@@ -1,9 +1,9 @@
-from flask import
-Flask,render_template,request,redirect,url_for,Response,request,jsonify
+
+from flask import Flask,render_template
 
 app=Flask(__name__)
 @app.route('/')
 def index():
-    return render_template('table.html')
+    return render_template('finalterm.html')
 
 app.run()

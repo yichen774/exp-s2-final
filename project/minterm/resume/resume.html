@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resume-style.css">
+    <title>ClassDemo</title>
+    <script src="./resume.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+       <div class="nav-center">
+            <!--nav header -->
+            <div class="nav-header">
+                <h3>Yi chen</h3>
+            </div>
+            <!--nav links -->
+            <ul class="nav-links">
+                <li class="active" id="nav-links-1">
+                    <a href="#">Home</a>
+                </li>
+                <li id="nav-links-1">
+                    <a href="#section-resume-about">About me</a>
+                </li>
+                <li id="nav-links-2">
+                    <a href="#section-resume-skills">Skill</a>
+                </li>
+                <li id="nav-links-3">
+                    <a href="#section-resume-work-experience">Work Experience</a>
+                </li>
+
+                <li  id="nav-links-4">
+                    <a href="#section-resume-workshop">Workshop</a>
+
+                </li>
+
+                <li  id="nav-links-5">
+                    <a href="#resume-display">Display</a>
+                </li>
+               
+            </ul>
+        </div> 
+    </nav>
+    </section>
+    <section class="resume" id="section-resume-profile">
+        <div class="resume-profile">
+            <div class = "profile-contain">
+                <div class="profile-selfie">
+                    <img src="/project/minterm/images/my-id-photo.jpg" alt="me" class="resume-img">
+                </div>
+                <h2 class ="profile-name">
+                    Wilson Chen
+                </h2>
+                <p class = "profile-title">Web Developer ,Python Developer ,C Developer</p>
+                <div class="btn-container">
+                    <button class="profile-btn" id="btn-github">
+                        <a href="https://github.com/yichen774"><img src="/project/minterm/images/github-logo.jpg" alt="Github" id="github-logo-img"></a>
+                    </button>
+                    <button class="profile-btn" id="btn-ig">
+                        <a href="https://www.instagram.com/_811032_c.w/"><img src="/project/minterm/images/ig-logo.png" alt="ig-logo" id="ig-logo-img"></a>
+                    </button>
+                    <button class="profile-btn" id="btn-fb">
+                        <a href="https://www.facebook.com/wilson.chen.39904/"><img src="/project/minterm/images/fb-logo.png" alt="fb-logo" id="fb-logo-img"></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-resume-about">
+        <div class="about">
+            <article class="about-blog">
+                <div class="about-content">
+                    <h3 class="about-header">
+                       About
+                    </h3>
+                    <p id="about-intro">
+                        Hello! My name is Wilson Chen. I am a web Developer,Python Developer,C Developer.I graduated with a bachelor degree in artificial intelligence from TKU. In college, i spend my time as much as possible on programming.I also often help classmate to solve programming problem.
+                    </p>
+                </div>
+                <div class="about-content" id="contact-info">
+                    <h3 class="about-header">Basic Information</h3>
+                    <div class="blog-content" id="bs-info">
+                        <div class="row-1">
+                            <p>Age:</p>
+                            <p>University:</p>
+                            <p>Phone Number:</p>
+                            <p>Address:</p>
+                            <p>Github:</p>
+                        </div>
+                        <div class="line-info">
+                            <p>18</p>
+                            <p><a href="https://www.tku.edu.tw/">Tamkung University</a></p>
+                            <p>0226215656</p>
+                            <p>New Taipei City ..</p>
+                            <p><a href="https://github.com/yichen774">My Github</a></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    </section>
+    <section id="section-resume-skills">
+        <div class="skill-blog">
+            <h3 class="skill-header">Skills</h3>
+            <div class="skill-container">
+                <div class="container-right">
+                    <div class="skill-progress" id="python-progress">
+                        <div class="container-prolan">
+                            <ul>
+                                Python
+                            </ul>
+                        </div>
+                        <div class="progress-border">   
+                            <div class="progress-bar" id="progress-bar-python">
+                                95%   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress" id="c-progress">
+                        <div class="container-prolan">
+                            <ul>
+                                C
+                            </ul>
+                        </div>
+                        <div class="progress-border">   
+                            <div class="progress-bar" id="progress-bar-c">
+                                90%   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress" id="cpp-progress">
+                        <div class="container-prolan">
+                            <ul>
+                                C++
+                            </ul>
+                        </div>
+                        <div class="progress-border">   
+                            <div class="progress-bar" id="progress-bar-cpp">
+                                85%   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress" id="cshape-progress">
+                        <div class="container-prolan">
+                            <ul>
+                                C#
+                            </ul>
+                        </div>
+                        <div class="progress-border">   
+                            <div class="progress-bar" id="progress-bar-cshape">
+                                65%   
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="container-left">
+                    <div class="skill-progress" id="java-progress">
+                        <div class="container-prolan">
+                            <ul>
+                                Java
+                            </ul>
+                        </div>
+                        <div class="progress-border">   
+                            <div class="progress-bar" id="progress-bar-java">
+                                85%   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress" id="html-progress">
+                        <div class="container-prolan">
+                            <ul>
+                                HTML
+                            </ul>
+                        </div>
+                        <div class="progress-border">   
+                            <div class="progress-bar" id="progress-bar-html">
+                                92%   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress" id="css-progress">
+                        <div class="container-prolan">
+                            <ul>
+                                CSS
+                            </ul>
+                        </div>
+                        <div class="progress-border">   
+                            <div class="progress-bar" id="progress-bar-css">
+                                95%   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-progress" id="javascript-progress">
+                        <div class="container-prolan">
+                            <ul>
+                                Javascript
+                            </ul>
+                        </div>
+                        <div class="progress-border">   
+                            <div class="progress-bar" id="progress-bar-javascript">
+                                80%   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="section-resume-work-experience">
+        <div class="work-blog">
+            <h3 class="ex-header">Work Experience</h3>
+            <div class="work-exp">
+                <div class="ex-blog-right" id="ex-blog-right-1">
+                    <h4>July 2022- April 2022</h4>
+                    <h3>McDonald</h3>
+                </div>
+                <div class="ex-blog-left">
+                    <h3>Part-time job</h3>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui. </p>
+                </div>
+            </div>
+            <div class="work-exp">
+                <div class="ex-blog-right">
+                    <h4>July 2023- April 2023</h4>
+                    <h3>Bord technology</h3>
+                </div>
+                <div class="ex-blog-left">
+                    <h3>Intern</h3>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui. </p>
+                </div>
+            </div>
+            <div class="work-exp">
+                <div class="ex-blog-right" id="ex-blog-right-1">
+                    <h4>July 2024- April 2024</h4>
+                    <h3>SSSTC Technology</h3>
+                </div>
+                <div class="ex-blog-left">
+                    <h3>Intern</h3>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui. </p>
+                </div>
+            </div>
+            <div class="work-exp">
+                <div class="ex-blog-right" id="ex-blog-right-1">
+                    <h4>March 2025- April 2025</h4>
+                    <h3>Delta Electronics, Inc.</h3>
+                </div>
+                <div class="ex-blog-left">
+                    <h3>Intern</h3>
+                    <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui. </p>
+                </div>
+            </div>
+        </div>
+        <div class="work-blog"></div>
+        <div></div>
+    </section>
+    <section id="section-resume-workshop">
+        <div class="workshop-header">
+            <h3 id="workshop-header">Workshop</h3>
+        </div> 
+        <div class="blogs-center">
+            <article class="blog">
+                <img src="/project/minterm/images/calculator-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>AI-實驗</span>
+                    <h3>
+                        Calculator
+                    </h3>
+                    <p><br>The simple calculator</p>
+                    <li onclick="showpage(1)">
+                    <a href="#resume-display">Read more</a>
+                    </li>
+
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/project/minterm/images/Countdown-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>AI-實驗</span>
+                    <h3>New Year Countdown</h3>
+                    <p>Countdown for New Year</p>
+                    <li onclick="showpage(2)">
+                    <a href="#resume-display">Read more</a>
+                    </li> 
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/project/minterm/images/blogs-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>網頁設計</span>
+                    <h3>Blogs</h3>
+                    <p><br>Travel blogs</p>
+                    <li onclick="showpage(3)">
+                    <a href="#resume-display">Read more</a>
+                    </li> 
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/project/minterm/images/table-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>網頁設計</span>
+                    <h3>School timetable</h3>
+                    <p>The simple timetable for TKU AI-B</p>
+                    <li onclick="showpage(4)">
+                    <a href="#resume-display">Read more</a>
+                    </li>
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/project/minterm/images/Clickfortime-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>AI-實驗</span>
+                    <h3>Click it for time!</h3>
+                    <p>Using javascript to print the time</p>
+                    <li onclick="showpage(5)">
+                    <a href="#resume-display">Read more</a>
+                    </li>
+                </div>
+            </article>
+            <article class="blog">
+                <img src="/project/minterm/images/loogin-img.JPG" alt class="blog-img">
+                <div class="blog-content">
+                    <span>AI-實驗</span>
+                    <h3>Login</h3>
+                    <p><br>Login and confirm the correction of password .<br>peggy work doesn't work</p>
+                    <li onclick="showpage(6)">
+                        <a href="#resume-display">Read more</a>
+                    </li>
+                </div>
+            </article>
+        </div>    
+    </section>   
+    <section class="show-classdemo" id="resume-display">
+    </section>
+   
+    <!-- <section class="show-classdemo">
+
+    </section> -->
+    <script src="./demo-411770083.js"></script>
+</body>
+</html>
