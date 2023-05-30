@@ -36,10 +36,10 @@ def search():
     for i in imgs:
         print(i['src'])
         jpg = requests.get('https://tw.everyonepiano.com'+i['src']) 
-        f = open(f'C:/Users/GF65/exp-s2-final/flask/static\img/{songname}_sheet_{name}.png', 'wb')   
+        f = open(f'C:/Autodesk/exp-s2-final/flask/static/img/{songname}_sheet_{name}.png', 'wb')   
         f.write(jpg.content)   
         f.close()              
         name = name + 1
-    ##return 圖片
+    return render_template('finalterm.html')
 if __name__ == '__main__':
     app.run()
