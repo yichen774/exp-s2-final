@@ -12,7 +12,7 @@ def index():
     return render_template('finalterm.html')
 
 
-@app.route('/search',methods=['POST'])
+@app.route('/',methods=['POST'])
 def search():
     driver = webdriver.Chrome()
     titlebtn='//*[@id="EOPMain"]/div/div[2]/div[4]/div[1]/a[1]'
@@ -40,6 +40,6 @@ def search():
         f.write(jpg.content)   
         f.close()              
         name = name + 1
-    return render_template('finalterm.html')
+    return render_template('works.html')
 if __name__ == '__main__':
     app.run()
