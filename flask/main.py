@@ -12,7 +12,7 @@ def index():
     return render_template('finalterm.html')
 
 
-@app.route('/',methods=['POST'])
+@app.route('/search',methods=['GET','POST'])
 def search():
     driver = webdriver.Chrome()
     titlebtn='//*[@id="EOPMain"]/div/div[2]/div[4]/div[1]/a[1]'
@@ -36,7 +36,7 @@ def search():
     for i in imgs:
         print(i['src'])
         jpg = requests.get('https://tw.everyonepiano.com'+i['src']) 
-        f = open(f'C:/Autodesk/exp-s2-final/flask/static/img/{songname}_sheet_{name}.png', 'wb')   
+        f = open(f'C:/Users/GF65/exp-s2-final/flask/static/img/{songname}_sheet_{name}.png', 'wb')   
         f.write(jpg.content)   
         f.close()              
         name = name + 1
