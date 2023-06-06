@@ -35,11 +35,21 @@ def search():
     name = 0    #  設定圖片編號
     for i in imgs:
         print(i['src'])
-        jpg = requests.get('https://tw.everyonepiano.com'+i['src']) 
-        f = open(f'C:/Users/GF65/exp-s2-final/flask/static/img/{songname}_sheet_{name}.png', 'wb')   
-        f.write(jpg.content)   
-        f.close()              
-        name = name + 1
-    return render_template('works.html')
+        try:
+            jpg = requests.get('https://tw.everyonepiano.com'+i['src']) 
+            f = open(f'C:/Users/GF65/exp-s2-final/flask/static/img/252086414-00{name}.png', 'wb')   
+            f.write(jpg.content)   
+            f.close()              
+            name = name + 1
+        except:
+            break
+        data={'songname':songname,'name':name}
+    return render_template('works.html',data=data)
+@app.route('/nextpic',methods=['POST'])
+def img():
+    img_path = 'static/img/252086414-000.png'
+    img_stream = return_img_stream(img_path)
+    return render_template('works.html',img_stream=img_stream)
+  
 if __name__ == '__main__':
     app.run()

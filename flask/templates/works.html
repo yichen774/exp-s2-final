@@ -4,108 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/project/minterm/works/works.css">
+    <link rel="stylesheet" href="/static/css/finalterm.css">
     <title>Works</title>
 </head>
 <body>
     <div class="title">
         <h3>
-            Wilson's works
+            顯示成果
         </h3>
     </div>
-    <div class="select">
-        <ul><a href="#section-photograph">Photogragh</a></ul>
-        <ul><a href="#section-html">HTML</a></ul>
+    <section class="photogragh-img" id="section-photograph">
+    <div id="photo">
+        <form action = "/nextpic" method = "POST">
+            <input type="button" value="Next picture" onclick="change()" required>
+        </form>
+        <img src="http://127.0.0.1:5000/252086414-000.png" alt="">
+        <input type="button" value="Previous picture" onclick="changep()" required>
     </div>
-   <section class="photogragh-img" id="section-photograph">
-    <div class="photogragh-center">
-        <div class="photo" id="photo-1">   
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/beach-ring-view.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-2">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/cafe-personal.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-3">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/huailan-mountain-view.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-4">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/inside-home-view.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-5">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/roof-view-sunrise.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-6">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/street-people.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-7">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/tamsui-sunset-2.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-8">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/tamsui-sunset-insidecafe.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-9">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/tamsui-sunset.jpg" alt="">
-        </div>
-        <div class="photo" id="photo-10">
-            <img src="/project/minterm/images/drive-download-20221110T144231Z-001/IMG_20220823_020523_630.webp" alt="">
-        </div>
-    </div>
-
-   </section>
-   <section class="html" id="section-html">
-    <h1 class="html-title">HTML</h1>
-    <div class="wrap">
-        <div class="item-html">
-            <img src="/project/minterm/images/calculator-img.JPG" alt="">
-            <div class="html-contain">
-                <h2>Calculator</h2>
-                <p>The simple calculator</p>
-                <p><a href="/ai-experience/w08/w08index.html">View</a></p>
-            </div>
-        </div>
-        <div class="item-html">
-            <img src="/project/minterm/images/Countdown-img.JPG" alt="">
-            <div class="html-contain">
-                <h2>New Year Countdown</h2>
-                <p>Countdown for New Year</p>
-                <p><a href="/ai-experience/w07/w07index.html">View</a></p>
-            </div>
-        </div>
-        <div class="item-html">
-            <img src="/project/minterm/images/blogs-img.JPG" alt="">
-            <div class="html-contain">
-                <h2>Blogs</h2>
-                <p>Travel blogs</p>
-                <p><a href="/w07/demo.411770083.html">View</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="wrap-2">
-        <div class="item-html">
-            <img src="/project/minterm/images/table-img.JPG" alt="">
-            <div class="html-contain">
-                <h2>School timetable</h2>
-                <p>The simple timetable for TKU AI-B</p>
-                <p><a href="/ai-experience/w03/411770083-陳宜-922-課堂作業.html">View</a></p>
-            </div>
-        </div>
-        <div class="item-html">
-            <img src="/project/minterm/images/Clickfortime-img.JPG" alt="">
-            <div class="html-contain">
-                <h2>Click it for time!</h2>
-                <p>Using javascript to print the time</p>
-                <p><a href="/ai-experience/w05/index(1).html">View</a></p>
-            </div>
-        </div>
-        <div class="item-html">
-            <img src="/project/minterm/images/loogin-img.JPG" alt="">
-            <div class="html-contain">
-                <h2>Login</h2>
-                <p>Login and confirm the correction of password .</p>
-                <p><a href="/ai-experience/w06/w06index.html">View</a></p>
-            </div>
-        </div>
-    </div>
-   </section>
+    </section>
+   
 </body>
 </html>

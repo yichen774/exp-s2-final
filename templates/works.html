@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/works.css">
+    <title>Works</title>
+</head>
+<body>
+    <div class="title">
+        <h3>
+            顯示成果
+        </h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            x=0;
+            cache=""
+            function change(){
+            x++;
+            cache+="<img src='252086414-00"+x+".jpg'>"; 
+            document.getElementById("photo").innerHTML=cache;
+            }
+        </script>
+    </script>
+    <section class="photogragh-img" id="section-photograph">
+        <input type="button" value="show photo" onclick="change()">
+        <img src="/flask/static/img/252086414-001" alt="">
+    </section>
+   
+</body>
+</html>

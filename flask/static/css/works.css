@@ -95,6 +95,11 @@ title
     font-family: 'Russo One', sans-serif;
     color: var(--gpSystemLightGrey);
     text-shadow: var(--gpStoreLightestGrey)1px 2px;
+    
+}
+.title h3{
+  font-size: 80px;
+  font-weight: 500;
 }
 
 /*
@@ -123,19 +128,6 @@ select
     padding: 0;
 }
 
-.select ul:hover
-{
-    background: linear-gradient(to top,var(--gpSystemGrey),var(--gpBackground-DarkHard));
-    border-left: 2px solid var(--gpBackground-DarkHard);
-    border-right: 2px solid var(--gpBackground-DarkHard);
-}
-
-.select ul a
-{
-    color: var(--gpSystemLightGrey);
-    text-decoration: none;
-}
-
 /*
 ============
 photograph
@@ -147,26 +139,84 @@ photograph
     
 }
 
-.photogragh-center
-{
-  border: var(--gpSystemGrey) dashed 1rem;
-  width: 80vw;
-  max-width: 90vw;
-  margin: 2rem auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(9, 13rem);
-  grid-template-areas: 
-  'a a d d f f'
-  'a a d d f f'
-  'a a d d f f'
-  'j j g g g g'
-  'j j g g g g'
-  'h h i i i i'
-  'h h i i i i'
-  'b b b e e e'
-  'b b b c c c' 
+.box1{
+    
+    
+  /* 寬度 */
+  width: 420px;
+  /* 高度 */
+  height: 324px;
+  /* 背景顏色 */
+  background: #666666;
+  /* 相對html頁面定位 */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* 居中 */
+  margin: auto;
+  /* 大盒子邊框 */
+  border: 1px solid #cdcdcd;
+}
+h3{
+
+
+  /* 字型大小 */
+  font-size: 18px;
+  /* 文字上下居中 */
+  line-height: 48px;
+  /* 文字顏色 */
+  color: #fff;
+  /* 文字左右對齊 */
+  text-align: center;
+  /* 字型不加粗 */
+  font-weight: 100;
+}
+.div_l{
+
+
+  width: 280px;
+  height: 196px;
+  border: 1px solid #ffffff;
+  /* 左浮動 */
+  float: left;
+  /* 大圖片左邊外邊距 */
+  margin-left: 20px;
+  /* 圖片超出盒子大小隱藏多餘圖片 */
+  overflow: hidden;
+}
+.div_l img{
+
+
+  width: 100%;
+  height: 100%;
+}
+.div_r{
+
+
+  width: 80px;
+  height: 196px;
+  /* 右浮動 */
+  float: right;
+  /* 豎直方向滑動條 */
+  overflow-y: scroll;
+}
+.div_r img{
+
+
+  /* 小圖片四周邊框 */
+  border: 1px solid #ffffff;
+  /* 取消圖片之間的間距 */
+  vertical-align: top;
+}
+.div_r a{
+
+
+  /* 將內聯元素轉變為塊元素 */
+  display: block;
+  /* 底部外邊距 */
+  margin-bottom: 8px;
 }
 
 .photograph-center img
