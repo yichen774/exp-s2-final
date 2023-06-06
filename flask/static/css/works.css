@@ -139,25 +139,11 @@ photograph
     
 }
 
-.box1{
-    
-    
-  /* 寬度 */
-  width: 420px;
-  /* 高度 */
-  height: 324px;
-  /* 背景顏色 */
-  background: #666666;
-  /* 相對html頁面定位 */
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /* 居中 */
-  margin: auto;
-  /* 大盒子邊框 */
-  border: 1px solid #cdcdcd;
+#photo{
+  width: 60vw;
+  height: 100vh;
+  border: 1rem dashed ;
+
 }
 h3{
 
@@ -172,51 +158,6 @@ h3{
   text-align: center;
   /* 字型不加粗 */
   font-weight: 100;
-}
-.div_l{
-
-
-  width: 280px;
-  height: 196px;
-  border: 1px solid #ffffff;
-  /* 左浮動 */
-  float: left;
-  /* 大圖片左邊外邊距 */
-  margin-left: 20px;
-  /* 圖片超出盒子大小隱藏多餘圖片 */
-  overflow: hidden;
-}
-.div_l img{
-
-
-  width: 100%;
-  height: 100%;
-}
-.div_r{
-
-
-  width: 80px;
-  height: 196px;
-  /* 右浮動 */
-  float: right;
-  /* 豎直方向滑動條 */
-  overflow-y: scroll;
-}
-.div_r img{
-
-
-  /* 小圖片四周邊框 */
-  border: 1px solid #ffffff;
-  /* 取消圖片之間的間距 */
-  vertical-align: top;
-}
-.div_r a{
-
-
-  /* 將內聯元素轉變為塊元素 */
-  display: block;
-  /* 底部外邊距 */
-  margin-bottom: 8px;
 }
 
 .photograph-center img

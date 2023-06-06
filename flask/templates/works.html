@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/works.css">
+    <script src="/static/js/works.js"></script>
     <title>Works</title>
 </head>
 <body>
@@ -16,25 +17,10 @@
     <section class="photogragh-img" id="section-photograph">
     <div id="photo">
         <input type="button" value="Next picture" onclick="change()">
-        <img src="static/images/252086414-000.png" alt="">
+        <img src="static/images/252086414-000.png" id="photo-img" alt="">
         <input type="button" value="Previous picture" onclick="changep()">
     </div>
-    <script>
-        x=0;
-        cache=""
-        function change(){
-            x++;
-            var newImg = document.createElement('img');
-            newImg.src = '252086414-00' + x + '.png';
-            document.getElementById('photo-img').src = '/static/images/252086414-00' + x + '.png';
-        }
-        function changep(){
-            x--;
-            var newImg = document.createElement('img');
-            n  ewImg.src = '252086414-00' + x + '.png';
-            document.getElementById('photo-img').src = '/static/images/252086414-00' + x + '.png';
-        }
-    </script>
+  
     </section>
    
 </body>
