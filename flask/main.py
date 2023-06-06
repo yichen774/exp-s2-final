@@ -43,13 +43,7 @@ def search():
             name = name + 1
         except:
             break
-        data={'songname':songname,'name':name}
-    return render_template('works.html',data=data)
-@app.route('/nextpic',methods=['POST'])
-def img():
-    img_path = 'static/img/252086414-000.png'
-    img_stream = return_img_stream(img_path)
-    return render_template('works.html',img_stream=img_stream)
-  
+    return render_template('works.html')
+
 if __name__ == '__main__':
     app.run()
